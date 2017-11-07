@@ -12,8 +12,8 @@ import com.chen.java.pattern.chapter01.behavior.QuackBehavior;
  */
 public abstract class Duck {
 
-    private FlyBehavior flyBehavior;
-    private QuackBehavior quackBehavior;
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
     public abstract void display();
 
@@ -29,4 +29,11 @@ public abstract class Duck {
         System.out.println("All duck float!");
     }
 
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 }
