@@ -34,7 +34,12 @@ public class WeatherSubject implements Subject {
 
     @Override
     public void notifyObservers() {
-        for (Observer observer: observers){
+
+        // 使用临时变量避免并发时对同一个List即添加又查询而可能出现的异常问题
+        Observer[] observerArr = new Observer[observers.size()];
+        observers.toArray(observerArr);
+
+        for (Observer observer: observerArr){
             observer.notified(messageData);
         }
     }

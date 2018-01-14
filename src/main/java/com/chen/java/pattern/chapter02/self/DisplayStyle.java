@@ -5,6 +5,10 @@ package com.chen.java.pattern.chapter02.self;
  */
 public interface DisplayStyle {
 
+    /**
+     * 展示消息内容
+     * @param messageData
+     */
     void display(MessageData messageData);
 
 }
