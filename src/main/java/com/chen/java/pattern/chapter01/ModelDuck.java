@@ -1,7 +1,7 @@
 package com.chen.java.pattern.chapter01;
 
-import com.chen.java.pattern.chapter01.behavior.FlyNoWay;
-import com.chen.java.pattern.chapter01.behavior.MuteQuack;
+import com.chen.java.pattern.chapter01.behavior.fly.FlyBehavior;
+import com.chen.java.pattern.chapter01.behavior.quack.QuackBehavior;
 
 /**
  * ModelDuck
@@ -12,9 +12,11 @@ import com.chen.java.pattern.chapter01.behavior.MuteQuack;
  */
 public class ModelDuck extends Duck {
 
-    public ModelDuck(){
-        flyBehavior = new FlyNoWay();
-        quackBehavior = new MuteQuack();
+    public ModelDuck(){}
+
+    public ModelDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior){
+        this.flyBehavior = flyBehavior;
+        this.quackBehavior = quackBehavior;
     }
 
     @Override

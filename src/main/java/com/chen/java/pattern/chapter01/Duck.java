@@ -1,7 +1,7 @@
 package com.chen.java.pattern.chapter01;
 
-import com.chen.java.pattern.chapter01.behavior.FlyBehavior;
-import com.chen.java.pattern.chapter01.behavior.QuackBehavior;
+import com.chen.java.pattern.chapter01.behavior.fly.FlyBehavior;
+import com.chen.java.pattern.chapter01.behavior.quack.QuackBehavior;
 
 /**
  * Duck

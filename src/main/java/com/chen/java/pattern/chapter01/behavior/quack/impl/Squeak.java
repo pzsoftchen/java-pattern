@@ -1,4 +1,6 @@
-package com.chen.java.pattern.chapter01.behavior;
+package com.chen.java.pattern.chapter01.behavior.quack.impl;
+
+import com.chen.java.pattern.chapter01.behavior.quack.QuackBehavior;
 
 /**
  * Sqeak

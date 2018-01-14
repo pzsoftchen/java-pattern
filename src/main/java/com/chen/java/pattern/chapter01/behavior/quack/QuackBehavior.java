@@ -1,4 +1,4 @@
-package com.chen.java.pattern.chapter01.behavior;
+package com.chen.java.pattern.chapter01.behavior.quack;
 
 /**
  * Created by Administrator on 2017/11/7.
