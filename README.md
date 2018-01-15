@@ -88,9 +88,16 @@
   杯子的大小：大杯，中杯，小杯
 
 如果采用继承的方式，由咖啡的种类和调料的种类组合出来的类数量庞大，而且每增加一种咖啡，其面临和调料组织而来的类难以估计，维护及其困难  
-所谓类对修改关闭对扩展开放，以例中需求，扩展调料，扩展大小，扩展xxx ... 均可通过装饰器来实现，而不用修改原有的类
-     
-     
+所谓类对修改关闭对扩展开放，以例中需求来理解即：扩展调料，扩展大小，扩展xxx ... 均可通过装饰器来实现，而不用修改原有的类
+
+Java IO相关的类  
+InputStream 子类 
+        
+      component(输入流类别):     ByteArrayInputStream, FileInputStream, ObjectInputStream, SequenceInputStream
+      decorator(输入流装饰器):   FilterInputStream
+      condiment(输入流装饰者):   DataInputStream, BufferedInputStream, PushbackInputStream, LineNumberInputStream   
+          
+          
 ![装饰者模式UML类图](http://processon.com/chart_image/5a5b1508e4b0abe85d5480c8.png)
 
 

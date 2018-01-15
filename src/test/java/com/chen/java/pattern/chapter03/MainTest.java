@@ -3,6 +3,9 @@ package com.chen.java.pattern.chapter03;
 import com.chen.java.pattern.chapter03.component.DarkRoast;
 import com.chen.java.pattern.chapter03.component.Espresso;
 import com.chen.java.pattern.chapter03.decorator.*;
+import com.chen.java.pattern.chapter03.io.LowerCaseInputStream;
+
+import java.io.ByteArrayInputStream;
 
 /**
  * MainTest
@@ -13,7 +16,7 @@ import com.chen.java.pattern.chapter03.decorator.*;
  */
 public class MainTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         Espresso espresso = new Espresso();
         MilkDecorator milkDecorator = new MilkDecorator(espresso);
@@ -32,6 +35,12 @@ public class MainTest {
         System.out.println(abstractCondiment.cost());
 
 
+        LowerCaseInputStream inputStream = new LowerCaseInputStream(new ByteArrayInputStream("DAFADSREWGDFA".getBytes()));
+        int a = 0;
+        while ((a = inputStream.read()) > 0){
+            System.out.print((char)a);
+        }
+        inputStream.close();
     }
 
 }
