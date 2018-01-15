@@ -10,7 +10,7 @@ package com.chen.java.pattern.chapter03.component;
 public class Decaf extends AbstractBeverage {
 
     public Decaf(){
-        description = description;
+        description = "Decaf";
     }
 
 

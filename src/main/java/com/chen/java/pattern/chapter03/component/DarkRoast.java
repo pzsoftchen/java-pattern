@@ -10,7 +10,7 @@ package com.chen.java.pattern.chapter03.component;
 public class DarkRoast extends AbstractBeverage {
 
     public DarkRoast(){
-        description = description;
+        description = "DarkRoast";
     }
 
     @Override

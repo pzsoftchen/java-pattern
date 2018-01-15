@@ -1,5 +1,6 @@
 package com.chen.java.pattern.chapter03;
 
+import com.chen.java.pattern.chapter03.component.DarkRoast;
 import com.chen.java.pattern.chapter03.component.Espresso;
 import com.chen.java.pattern.chapter03.decorator.*;
 
@@ -22,7 +23,11 @@ public class MainTest {
         System.out.println(mochaDecorator.getDescription());
         System.out.println(mochaDecorator.cost());
 
-        AbstractCondiment abstractCondiment = new MilkDecorator(new MochaDecorator(new SoyDecorator(new WhipDecorator(new Espresso()))));
+        AbstractCondiment abstractCondiment = new MilkDecorator(new MochaDecorator(new SoyDecorator(new WhipDecorator(new DarkRoast()))));
+        System.out.println(abstractCondiment.getDescription());
+        System.out.println(abstractCondiment.cost());
+
+        abstractCondiment = new MilkDecorator(new MochaDecorator(new SoyDecorator(new WhipDecorator(new VentiSizeDecorator(new DarkRoast())))));
         System.out.println(abstractCondiment.getDescription());
         System.out.println(abstractCondiment.cost());
 
