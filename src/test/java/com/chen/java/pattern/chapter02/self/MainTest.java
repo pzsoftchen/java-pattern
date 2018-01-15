@@ -1,5 +1,6 @@
 package com.chen.java.pattern.chapter02.self;
 
+import com.chen.java.pattern.chapter02.MessageData;
 import com.chen.java.pattern.chapter02.self.observer.CurrConditionObserver;
 import com.chen.java.pattern.chapter02.self.observer.Observer;
 import com.chen.java.pattern.chapter02.self.observer.StatisticsDisplay;

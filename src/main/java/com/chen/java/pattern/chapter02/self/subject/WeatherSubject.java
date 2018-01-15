@@ -1,6 +1,6 @@
 package com.chen.java.pattern.chapter02.self.subject;
 
-import com.chen.java.pattern.chapter02.self.MessageData;
+import com.chen.java.pattern.chapter02.MessageData;
 import com.chen.java.pattern.chapter02.self.observer.Observer;
 
 import java.util.ArrayList;

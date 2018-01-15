@@ -1,4 +1,4 @@
-package com.chen.java.pattern.chapter02.self;
+package com.chen.java.pattern.chapter02;
 
 import lombok.*;
 

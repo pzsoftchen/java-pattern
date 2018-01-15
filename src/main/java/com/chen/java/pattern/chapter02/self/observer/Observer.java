@@ -1,6 +1,6 @@
 package com.chen.java.pattern.chapter02.self.observer;
 
-import com.chen.java.pattern.chapter02.self.MessageData;
+import com.chen.java.pattern.chapter02.MessageData;
 
 /**
  *

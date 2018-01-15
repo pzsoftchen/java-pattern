@@ -1,7 +1,7 @@
 package com.chen.java.pattern.chapter02.self.observer;
 
-import com.chen.java.pattern.chapter02.self.DisplayStyle;
-import com.chen.java.pattern.chapter02.self.MessageData;
+import com.chen.java.pattern.chapter02.DisplayStyle;
+import com.chen.java.pattern.chapter02.MessageData;
 import com.chen.java.pattern.chapter02.self.subject.Subject;
 
 /**
