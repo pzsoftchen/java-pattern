@@ -15,7 +15,7 @@ import com.chen.java.pattern.chapter01.behavior.quack.impl.Squeak;
  * @package com.chen.java.pattern.chapter01
  * @date 2017/11/12/22:07
  */
-public class DuckMain {
+public class MainTest {
 
 
     public static void main(String[] args) {
